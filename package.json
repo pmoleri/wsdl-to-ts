@@ -5,12 +5,16 @@
   "main": "lib/wsdl-to-ts.js",
   "scripts": {
     "test": "node test/index.js",
-    "build": "tsc -p tsconfig.json && npm test"
+    "build": "tsc -p tsconfig.json && npm test",
+    "prepack": "npm run build"
   },
   "bin": {
     "wsdl-to-ts": "lib/index.js"
   },
-  "keywords": ["soap", "typescript"],
+  "keywords": [
+    "soap",
+    "typescript"
+  ],
   "author": {
     "name": "TimLuq",
     "url": "https://github.com/TimLuq"
@@ -20,7 +24,7 @@
     "@types/minimist": "^1.2.0",
     "@types/mkdirp": "^0.3.29",
     "@types/node": "*",
-    "@types/soap": "*",
+    "@types/soap": "^0.18.0",
     "typescript": "^2.2.0"
   },
   "dependencies": {
@@ -32,7 +36,7 @@
     "url": "https://github.com/TimLuq/wsdl-to-ts/issues"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/TimLuq/wsdl-to-ts.git"
+    "type": "git",
+    "url": "https://github.com/TimLuq/wsdl-to-ts.git"
   }
 }
